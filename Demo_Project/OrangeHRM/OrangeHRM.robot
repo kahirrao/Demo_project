@@ -25,13 +25,31 @@ Force Tags   Sanity
 
     # Close Browser
     
-3rdTestCase
+
+LoginToGmail
+    Set Tags    Regression
+    Remove Tags    Regression
+    SeleniumLibrary.Open Browser   https://accounts.google.com/      gc   
+    Input Text         name=identifier    ahirraok3@gmail.com  
+    Click Element      id=identifierNext    
+    # Press Keys         name=identifier    ENTER
+    sleep   5
+    Input Password     name=password     Kalpesh@90
+    Sleep  5
+    Click Element      id=passwordNext 
+    # Press Keys         name=password    ENTER  
+    sleep   6   
+    # Close Browser
+      
+    # Close Browser
     
-    Log    All test pass
+# 3rdTestCase
     
-4thTestCase
+    # Log    All test pass
     
-    Log    All test pass
+# 4thTestCase
+    
+    # Log    All test pass
          
          
 *** Keywords ***
